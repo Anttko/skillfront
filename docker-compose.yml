@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  skill:
+    image: skill-front-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/usr/src/app
+    container_name: skill-front-prod
+        
