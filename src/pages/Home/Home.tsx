@@ -47,6 +47,10 @@ const Home = () => {
       });
     }
   };
+  const clickTest = (event: React.MouseEvent<HTMLParagraphElement>): void => {
+    const inputElement: HTMLInputElement = document.querySelector('#hashkey');
+    inputElement.value += '123';
+  };
 
   return (
     <Box bg={'white'} color={'white'} minH="100vh">
@@ -63,12 +67,18 @@ const Home = () => {
               Collector
             </Text>
           </Heading>
+          <Text>
+            Code for testing:{' '}
+            <Text onClick={clickTest} as={'span'} fontWeight={600} fontSize={'2xl'} color="red.500">
+              123
+            </Text>
+          </Text>
           <Stack direction={'column'} spacing={3} align={'center'} alignSelf={'center'} position={'relative'}>
             <FormControl isInvalid={isError}>
               <FormLabel> </FormLabel>
               <Input
                 id="hashkey"
-                placeholder="just press go for now"
+                placeholder="try out with 123 "
                 type={hashkey.type}
                 value={hashkey.value}
                 onChange={hashkey.onChange}
