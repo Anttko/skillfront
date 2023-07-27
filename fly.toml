@@ -45,9 +45,4 @@ processes = []
   guest_path = "/usr/share/nginx/html/"
   url_prefix = "/"
 
-[deploy]
-  release_command = "npm run build"
-
 [build]
-  [build.args]
-    NODE_VERSION = "16.20.0"
