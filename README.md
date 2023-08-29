@@ -1,7 +1,5 @@
 # Front-end for the skill collector
-[http://it-ff-2023-t04.pages.labranet.jamk.fi/front](http://it-ff-2023-t04.pages.labranet.jamk.fi/front)
-
-[MOCKUP](https://www.figma.com/file/60gUVePHshMOTZPAXoGbWu/FF-Mockups?node-id=0-1&t=zEovuFRn3jde2VIg-0)
+[https://skillcollector.fly.dev/](https://skillcollector.fly.dev/)
 
 ## Install
 ```bash
